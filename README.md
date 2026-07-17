@@ -2,7 +2,7 @@
 
 Postman + Newman test validating a Cloudflare Workers I built that leverages [PokéAPI](https://pokeapi.co/). The Worker endpoint is `https://pokeapi-worker.edwinhchun.workers.dev` and accepts requests like `/pokemon/{name}`, fetching data from PokéAPI and returning it as its own JSON response.
 
-This repo tests that Workers automatically on every push to the main branch, using the same Newman + GitHub Actions pattern from my pagination testing repo, but some validating infrastructure I vibecoded using Claude.
+This repo also tests that Workers automatically on every push to the main branch, using the same Newman + GitHub Actions pattern from my pagination testing repo, but some validating infrastructure I vibecoded using Claude.
 
 ## What the Worker does
 
