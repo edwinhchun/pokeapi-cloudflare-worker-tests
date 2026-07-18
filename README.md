@@ -1,4 +1,4 @@
-# PokéAPI Cloudflare Workers Tests
+# PokéAPI Cloudflare Workers + Newman
 
 Postman + Newman test validating a Cloudflare Workers I built leveraging [PokéAPI](https://pokeapi.co/). The Worker endpoint is `https://pokeapi-worker.edwinhchun.workers.dev` and accepts requests like `/pokemon/{name}`, fetching data from PokéAPI and returning it as its own JSON response.
 
