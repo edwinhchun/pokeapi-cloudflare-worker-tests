@@ -35,7 +35,7 @@ Every push to `main` triggers `.github/workflows/newman-tests.yml`, which instal
 ## Problems I hit setting this up and why they happened
 
 **Workflow file needs the `.yml` extension**
-GitHub Actions only picks up files inside `.github/workflows/` that end in `.yml` (or `.yaml`). A file without that extension just sits there as an unrecognized file. If a workflow isn't showing up under the Actions tab at all, check the logs to drill down on what caused the error. I was also running into the same problem while attempting to run it locally. After seeing the error response in the Github Actions logs, I was able to successfully run it locally. 
+GitHub Actions only picks up files inside `.github/workflows/` that end in `.yml` (or `.yaml`). A file without that extension just sits there as an unrecognized file. If a workflow isn't showing up under the Actions tab at all, check the logs to drill down on what caused the error. I was also running into the same problem while attempting to run it locally. After seeing the error response in the Github Actions logs, I was rectify the terminal command synthax to successfully run. 
 
 **Quote filenames that contain spaces**
 My collection was exported as `PokéAPI Worker Tests.postman_collection.json` with the spaces. After doing some research, I discovered that in a shell command spaces separate arguments so `newman run PokéAPI Worker Tests.postman_collection.json` gets read as four separate arguments instead a file, and Newman fails trying to find a file just called `PokéAPI`. Wrapping the filename in quotes (`newman run "PokéAPI Worker Tests.postman_collection.json"`) tells the shell to execute it as a single argument.
