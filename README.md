@@ -16,7 +16,7 @@ Three requests, seven assertions total:
 
 | Request | Checks |
 |---|---|
-| Get Valid Pokemon | Status 200, correct Pokémon name in response, correct `Content-Type` header |
+| Get Valid Pokemon | Status 200, correct Pokémon name in response |
 | Get Invalid Pokemon | Status 404, error message present |
 | Get Pokemon No Name | Status 400, error message present |
 
