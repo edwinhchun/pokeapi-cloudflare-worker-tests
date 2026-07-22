@@ -16,8 +16,8 @@ Three requests, seven assertions total:
 
 | Request | Checks |
 |---|---|
-| Get Valid Pokemon | Status 200, correct Pokémon name in response |
-| Get Invalid Pokemon | Status 404, error message present |
+| Get Valid Pokemon | Status is 200, Pokémon Found, Response is JSON |
+| Get Invalid Pokemon | Status is 404, Pokémon Not Found |
 | Get Pokemon No Name | Status 400, error message present |
 
 ## Running it locally using terminal
